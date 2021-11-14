@@ -1,0 +1,31 @@
+<html>
+<head>
+
+<title>加载视频解析</title>
+<script type="text/javascript">
+function show(){
+ var a = myform.study.value; //使用id来获取input输入框的值
+  window.open("https://jx.parwix.com:4433/player/?url"+a);
+};
+
+</script>
+</head>
+
+<body>
+	<style type="text/css">
+		input{
+			width:500px;height:30px;line-height:30px;
+			text-align:center;
+		}
+	</style>
+<form name="myform">
+  <div style="text-align:center;vertical-align:middle;margin-top: 300px;">
+  	请输入url <br/><br/>
+  	<input type="text" id="study" name="box"  value="" /> <br/><br/>
+   <button  onclick="show()">解析</button>
+  </div>
+</form>
+
+</body>
+
+</html>
